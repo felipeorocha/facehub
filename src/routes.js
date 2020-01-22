@@ -7,5 +7,6 @@ routes.get("/devs", DevController.index);
 routes.get("/devs/:id", DevController.show);
 routes.delete("/devs/:id", DevController.destroy);
 routes.post("/devs", DevController.store);
+routes.put("/devs/:id", DevController.update);
 
 module.exports = routes;

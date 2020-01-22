@@ -5,7 +5,8 @@ const app = express();
 
 mongoose.connect('mongodb+srv://frocha:kCKzM7kSG0URyajh@cluster0-3cdjc.mongodb.net/devhub?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: false
 });
 
 app.use(express.json());
